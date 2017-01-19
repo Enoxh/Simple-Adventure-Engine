@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- @enoxh  -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" media="screen" href="css/default.css">
+    <title>Simple Adventure Engine</title>
+</head>
+<body>
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <h2>Welcome to an Adventure!</h2>
+                <p>You are exploring an old abandoned house. You have just entered the front door.</p>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div id="showText" class="show-text"></div>
+                <div class="row inputs">
+                    <div class="col-xs-6 ">
+                        <input type="text" id="userSaid" class="form-control" />
+                    </div>
+                    <div class="col-xs-6">
+                        <button class="but btn btn-success pull-left" onclick="getSaid()">Go</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        init();
+    </script>
+</body>
+</html>
